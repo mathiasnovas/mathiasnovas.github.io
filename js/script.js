@@ -43,7 +43,19 @@
                     $('.repos').append(html);
                 });
             }
-         });
+        });
+        
+        $(window).on('scroll', function () {
+            var current = $(document).scrollTop(),
+                offset = $('.work').offset().top,
+                logo = $('.logo');
+
+            if (current > offset - (logo.position().top + logo.height())) {
+                logo.addClass('dark');
+            } else {
+                logo.removeClass('dark');
+            }
+        });
 
     });
 
