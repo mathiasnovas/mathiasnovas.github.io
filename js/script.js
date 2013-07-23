@@ -23,7 +23,7 @@
          * Fetch data from github
          */
          $.ajax({
-            url: 'https://api.github.com/users/novasism/repos',
+            url: 'https://api.github.com/users/mathiasnovas/repos',
             success: function (data) {
                 $.each(data, function () {
 
