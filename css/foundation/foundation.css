@@ -90,7 +90,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 80em;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -105,8 +105,8 @@ select {
     float: left; }
   .row .row {
     width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
+    margin-left: -1.9375em;
+    margin-right: -1.9375em;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none;
@@ -130,8 +130,8 @@ select {
 .column,
 .columns {
   position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: 1.9375em;
+  padding-right: 1.9375em;
   width: 100%;
   float: left; }
 
@@ -139,8 +139,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    padding-left: 1.9375em;
+    padding-right: 1.9375em;
     float: left; }
 
   .small-1 {
@@ -1206,7 +1206,7 @@ blockquote p {
     display: block; }
   .vcard .fn {
     font-weight: bold;
-    font-size: 0.9375em; }
+    font-size: 1.9375em; }
 
 .vevent .summary {
   font-weight: bold; }
@@ -2296,7 +2296,7 @@ label.error {
     .section-container.horizontal-nav > .section > .title a,
     .section-container.accordion > section > .title a,
     .section-container.accordion > .section > .title a {
-      padding: 0.9375em;
+      padding: 1.9375em;
       color: #333333;
       font-size: 0.875em;
       background: none; }
@@ -2319,7 +2319,7 @@ label.error {
   .section-container.horizontal-nav > .section > .content,
   .section-container.accordion > section > .content,
   .section-container.accordion > .section > .content {
-    padding: 0.9375em;
+    padding: 1.9375em;
     background-color: white;
     border: solid 1px #cccccc; }
     .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child,
@@ -2425,14 +2425,14 @@ label.error {
     cursor: pointer;
     border: solid 1px #cccccc; }
     .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
-      padding: 0.9375em;
+      padding: 1.9375em;
       color: #333333;
       font-size: 0.875em;
       background: none; }
     .section-container.tabs > section > .title:hover, .section-container.tabs > .section > .title:hover {
       background-color: #e2e2e2; }
   .section-container.tabs > section > .content, .section-container.tabs > .section > .content {
-    padding: 0.9375em;
+    padding: 1.9375em;
     background-color: white;
     border: solid 1px #cccccc; }
     .section-container.tabs > section > .content > *:last-child, .section-container.tabs > .section > .content > *:last-child {
@@ -2483,14 +2483,14 @@ label.error {
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
-        padding: 0.9375em;
+        padding: 1.9375em;
         color: #333333;
         font-size: 0.875em;
         background: none; }
       .section-container.auto > section > .title:hover, .section-container.auto > .section > .title:hover {
         background-color: #e2e2e2; }
     .section-container.auto > section > .content, .section-container.auto > .section > .content {
-      padding: 0.9375em;
+      padding: 1.9375em;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child {
@@ -2551,14 +2551,14 @@ label.error {
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > .title a {
-        padding: 0.9375em;
+        padding: 1.9375em;
         color: #333333;
         font-size: 0.875em;
         background: none; }
       .section-container.vertical-tabs > section > .title:hover, .section-container.vertical-tabs > .section > .title:hover {
         background-color: #e2e2e2; }
     .section-container.vertical-tabs > section > .content, .section-container.vertical-tabs > .section > .content {
-      padding: 0.9375em;
+      padding: 1.9375em;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.vertical-tabs > section > .content > *:last-child, .section-container.vertical-tabs > .section > .content > *:last-child {
@@ -2626,14 +2626,14 @@ label.error {
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
-        padding: 0.9375em;
+        padding: 1.9375em;
         color: #333333;
         font-size: 0.875em;
         background: none; }
       .section-container.vertical-nav > section > .title:hover, .section-container.vertical-nav > .section > .title:hover {
         background-color: #e2e2e2; }
     .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > .content {
-      padding: 0.9375em;
+      padding: 1.9375em;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.vertical-nav > section > .content > *:last-child, .section-container.vertical-nav > .section > .content > *:last-child {
@@ -2699,14 +2699,14 @@ label.error {
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
-        padding: 0.9375em;
+        padding: 1.9375em;
         color: #333333;
         font-size: 0.875em;
         background: none; }
       .section-container.horizontal-nav > section > .title:hover, .section-container.horizontal-nav > .section > .title:hover {
         background-color: #e2e2e2; }
     .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > .content {
-      padding: 0.9375em;
+      padding: 1.9375em;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.horizontal-nav > section > .content > *:last-child, .section-container.horizontal-nav > .section > .content > *:last-child {
@@ -2756,14 +2756,14 @@ label.error {
     cursor: pointer;
     border: solid 1px #cccccc; }
     .no-js .section-container > section > .title a, .no-js .section-container > .section > .title a {
-      padding: 0.9375em;
+      padding: 1.9375em;
       color: #333333;
       font-size: 0.875em;
       background: none; }
     .no-js .section-container > section > .title:hover, .no-js .section-container > .section > .title:hover {
       background-color: #e2e2e2; }
   .no-js .section-container > section > .content, .no-js .section-container > .section > .content {
-    padding: 0.9375em;
+    padding: 1.9375em;
     background-color: white;
     border: solid 1px #cccccc; }
     .no-js .section-container > section > .content > *:last-child, .no-js .section-container > .section > .content > *:last-child {
@@ -3906,7 +3906,7 @@ form.custom {
         border-color: #aaaaaa transparent transparent transparent;
         border-top-style: solid;
         position: absolute;
-        left: 0.9375em;
+        left: 1.9375em;
         top: 50%;
         margin-top: -3px; }
     form.custom .custom.dropdown:hover a.selector:after, form.custom .custom.dropdown.open a.selector:after {
@@ -4159,21 +4159,21 @@ ul.pagination {
     line-height: 1; }
   .pricing-table .title {
     background-color: #dddddd;
-    padding: 0.9375em 1.25em;
+    padding: 1.9375em 1.25em;
     text-align: center;
     color: #333333;
     font-weight: bold;
     font-size: 1em; }
   .pricing-table .price {
     background-color: #eeeeee;
-    padding: 0.9375em 1.25em;
+    padding: 1.9375em 1.25em;
     text-align: center;
     color: #333333;
     font-weight: normal;
     font-size: 1.25em; }
   .pricing-table .description {
     background-color: white;
-    padding: 0.9375em;
+    padding: 1.9375em;
     text-align: center;
     color: #777777;
     font-size: 0.75em;
@@ -4182,7 +4182,7 @@ ul.pagination {
     border-bottom: dotted 1px #dddddd; }
   .pricing-table .bullet-item {
     background-color: white;
-    padding: 0.9375em;
+    padding: 1.9375em;
     text-align: center;
     color: #333333;
     font-size: 0.875em;
@@ -4521,7 +4521,7 @@ a.th {
   position: absolute;
   z-index: 999;
   font-weight: bold;
-  font-size: 0.9375em;
+  font-size: 1.9375em;
   line-height: 1.3;
   padding: 0.5em;
   max-width: 85%;
