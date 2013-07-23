@@ -20,7 +20,7 @@
         }
 
         /**
-         * Fetch data from github
+         * Fetch repository data from github
          */
          $.ajax({
             url: 'https://api.github.com/users/mathiasnovas/repos',
@@ -39,15 +39,6 @@
                             '<span class="language '+ language.toLowerCase() +'">' + language + '</span>' +
                             '</div></a>'
                     });
-
-                    // if (this.language) {
-                    //     var language = $('<span>', {
-                    //         'class': 'language ' + this.language.toLowerCase(),
-                    //         'html': this.language
-                    //     });
-
-                    //     html.find('a').append(language);
-                    // }
 
                     $('.repos').append(html);
                 });
