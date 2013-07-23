@@ -22,7 +22,7 @@
         /**
          * Fetch repository data from github
          */
-         $.ajax({
+        $.ajax({
             url: 'https://api.github.com/users/mathiasnovas/repos',
             success: function (data) {
                 $.each(data, function () {
@@ -30,7 +30,7 @@
                     var language = (this.language?this.language:'Unknown');
 
                     var html = $('<article>', {
-                        'class': 'item columns large-4',
+                        'class': 'item columns large-3 small-12',
                         'html': '<a href="' + this.svn_url + '" target="_blank"><h1 class="title">' + this.name +
                             '</h1><div class="description"><p>' + this.description + '<p>' +
                             '<div class="date"><p>Created ' + moment(this.created_at, 'YYYYMMDD').fromNow() +
@@ -44,7 +44,7 @@
                 });
             }
         });
-        
+
         $(window).on('scroll', function () {
             var current = $(document).scrollTop(),
                 offset = $('.work').offset().top,

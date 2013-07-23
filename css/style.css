@@ -83,7 +83,7 @@ p {
         right: 0;
         text-align: center;
         top: 50%;
-        width: 1000px;
+        width: 100%;
     }
         .information .boxes .title {
             border-bottom: 1px dotted #fff;
@@ -107,7 +107,7 @@ p {
         }
     /* More button */
     .information .more {
-        bottom: 20px;
+        bottom: 2em;
         color: #fff;
         left: 50%;
         margin: 0 auto 0 -100px;
@@ -167,7 +167,7 @@ p {
  */
 .work {
     background: #fafafa;
-    padding: 2em 0 4em;
+    padding: 4em 0;
 }
     .work a {
         color: #000;
@@ -183,7 +183,6 @@ p {
     }
         .work .item a {
             display: block;
-            padding: 20px;
         }
         .work .item .title {
             font-size: 2em;
@@ -199,6 +198,7 @@ p {
             background: #000;
             border-radius: 5px;
             color: #fff;
+            font-size: .8em;
             opacity: .5;
             padding: 2px 5px;
         }
@@ -213,11 +213,17 @@ p {
         .work .item .language.shell {
             background: #536ccb;
         }
-    /* Mobile view */
+    /* Mobile & tablet view */
+    @media only screen and (max-width: 940px) {
+        .work .item {
+            width: 33.33%;
+        }
+    }
     @media only screen and (max-width: 767px) {
         .work .item {
             min-height: 0;
-            padding: 1em 0;
+            padding: 2.5em 1em;
+            width: 100%;
         }
     }
 
