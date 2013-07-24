@@ -231,6 +231,28 @@ p {
     }
 
 /**
+ * Technologies
+ */
+.technologies {
+    background: #000;
+    color: #999;
+    padding: 4em 0;
+    text-align: center;
+}
+    .technologies ul {
+        list-style: none;
+    }
+    .technologies .ometer {
+        background: #333;
+        border-right: 1px solid #fff;
+        display: block;
+    }
+    .technologies .ometer i {
+        display: block;
+        height: 10px;
+    }
+
+/**
  * Footer
  */
 footer {

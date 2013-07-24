@@ -6,7 +6,7 @@
          * Smooth scroll to anchors
          */
         var scrollable = $('a[data-scroll]');
-        
+
         if (scrollable.length > 0) {
             scrollable.on('click', function (e) {
                 e.preventDefault();
@@ -45,6 +45,9 @@
             }
         });
 
+        /**
+         * Change logo background color based on scroll location.
+         */
         $(window).on('scroll', function () {
             var current = $(document).scrollTop(),
                 offset = $('.work').offset().top,
@@ -55,6 +58,25 @@
             } else {
                 logo.removeClass('dark');
             }
+        });
+
+        /**
+         * Display ometer
+         */
+        var ometer = $('[data-ometer]');
+
+        $.each(ometer, function () {
+            var elem = $(this),
+                level = elem.attr('data-ometer');
+
+            console.log('rgba(0,255,' + (level * 2) + ',.7)');
+
+            elem.append('<i>');
+
+            elem.find('i').css({
+                'width': level + '%',
+                'background': 'rgba(0,255,' + (level * 2) + ',.7)'
+            });
         });
 
     });
