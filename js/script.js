@@ -53,7 +53,7 @@
                 offset = $('.work').offset().top,
                 logo = $('.logo');
 
-            if (current > offset - (logo.position().top + logo.height())) {
+            if (current > offset - (logo.position().top + logo.height() / 2)) {
                 logo.addClass('dark');
             } else {
                 logo.removeClass('dark');

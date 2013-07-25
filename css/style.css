@@ -41,16 +41,25 @@ p {
         color: #000;
         font-weight: bold;
         left: 2em;
-        padding: .5em;
         position: fixed;
         top: 2em;
         transition: .5s;
         z-index: 1;
     }
+    .page .logo:hover {
+        -webkit-transform: rotate(360deg);
+    }
+        .page .logo a {
+            color: #000;
+            display: block;
+            padding: .5em;
+        }
     .page .logo.dark {
         background: rgba(0,0,0,.7);
-        color: #fff;
     }
+        .page .logo.dark a {
+            color: #fff;
+        }
     /* Mobile view */
     @media only screen and (max-width: 767px) {
         .page .logo {
