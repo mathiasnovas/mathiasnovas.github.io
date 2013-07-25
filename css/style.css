@@ -258,6 +258,7 @@ p {
 }
     .technologies ul {
         list-style: none;
+        overflow: hidden;
     }
     .technologies .ometer {
         background: #333;
@@ -267,6 +268,17 @@ p {
     .technologies .ometer i {
         display: block;
         height: 10px;
+        transition: 10s;
+        width: 10px;
+    }
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        .technologies {
+            padding: 1em 0;
+        }
+            .technologies li {
+                margin: 1em 0;
+            }
     }
 
 /**

@@ -25,6 +25,12 @@
         $.ajax({
             url: 'https://api.github.com/users/mathiasnovas/repos',
             success: function (data) {
+                var repos = $('.repos');
+
+                if (!repos.children().length > 0) {
+                    repos.html('');
+                }
+
                 $.each(data, function () {
 
                     var language = (this.language?this.language:'Unknown');
@@ -40,7 +46,7 @@
                             '</div></a>'
                     });
 
-                    $('.repos').append(html);
+                    repos.append(html);
                 });
             }
         });
@@ -69,14 +75,13 @@
             var elem = $(this),
                 level = elem.attr('data-ometer');
 
-            console.log('rgba(0,255,' + (level * 2) + ',.7)');
-
             elem.append('<i>');
 
             elem.find('i').css({
-                'width': level + '%',
                 'background': 'rgba(0,255,' + (level * 2) + ',.7)'
-            });
+            }).animate({
+                'width': level + '%'
+            }, 'fast');
         });
 
     });
