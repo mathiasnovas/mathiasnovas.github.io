@@ -144,11 +144,11 @@ p {
     }
     @media only screen and (max-width: 767px) {
         .information {
-            height: 100%;
+            height: auto;
         }
             .information .boxes {
                 background: rgba(0,255,255,.7);
-                height: 100%;
+                height: auto;
                 margin-top: 0;
                 position: relative;
                 top: 0;
