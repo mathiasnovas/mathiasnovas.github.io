@@ -256,6 +256,9 @@ p {
     padding: 4em 0;
     text-align: center;
 }
+    .technologies .title {
+        margin: 0 0 1em;    
+    }
     .technologies ul {
         list-style: none;
         overflow: hidden;
@@ -276,6 +279,9 @@ p {
         .technologies {
             padding: 1em 0;
         }
+            .technologies .title {
+                margin: 1em 0    
+            }
             .technologies li {
                 margin: 1em 0;
             }
