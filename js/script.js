@@ -87,9 +87,10 @@
         /**
          *  Parallax scrolling effect
          */
-        var info = $('.information');
+        var info = $('.information'),
+            $doc = $(document);
         $(window).on('scroll', function () {
-            info.css('background-position', '0 ' + $(document).scrollTop() / 10 + '%');
+            info.css('background-position', '0 ' + $doc.scrollTop() / 10 + '%');
         });
 
     });
