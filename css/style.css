@@ -73,6 +73,7 @@ p {
  */
 .information {
     background: url('../img/bg.jpg') no-repeat;
+    background-position: 0 0;
     background-size: cover;
     height: 100%;
 }

@@ -84,6 +84,14 @@
             }, 'fast');
         });
 
+        /**
+         *  Parallax scrolling effect
+         */
+        var info = $('.information');
+        $(window).on('scroll', function () {
+            info.css('background-position', '0 ' + $(document).scrollTop() / 10 + '%');
+        });
+
     });
 
 }) ();
