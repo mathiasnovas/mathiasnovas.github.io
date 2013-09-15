@@ -32,10 +32,10 @@
                 }
 
                 $.each(data, function () {
+                    if (this.fork || !this.description) return;
 
-                    var language = (this.language?this.language:'Unknown');
-
-                    var html = $('<article>', {
+                    var language = (this.language?this.language:'Unknown'),
+                        html = $('<article>', {
                         'class': 'item columns large-3 small-12',
                         'html': '<a href="' + this.svn_url + '" target="_blank"><h1 class="title">' + this.name +
                             '</h1><div class="description"><p>' + this.description + '<p>' +
