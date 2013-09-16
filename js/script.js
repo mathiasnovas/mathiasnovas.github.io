@@ -57,10 +57,11 @@
         var doc = $(document),
             offset = $('.work').offset().top,
             logo = $('.logo'),
-            info = $('.information');
+            info = $('.information'),
+            current = '';
 
         $(window).on('scroll', function () {
-            var current = doc.offset().top;
+            current = doc.scrollTop();
 
             // Change logo background color based on scroll location.
             if (current > offset - (logo.position().top + logo.height() / 2)) {
@@ -70,7 +71,7 @@
             }
 
             // Scroll backround image
-            info.css('background-position', '0 ' + doc.offset().top / 10 + '%');
+            info.css('background-position', '0 ' + doc.scrollTop() / 10 + '%');
         });
 
         /**
