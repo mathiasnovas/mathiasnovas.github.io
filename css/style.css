@@ -258,7 +258,7 @@ p {
     text-align: center;
 }
     .technologies .title {
-        margin: 0 0 1em;    
+        margin: 0 0 1em;
     }
     .technologies ul {
         list-style: none;
@@ -281,7 +281,7 @@ p {
             padding: 1em 0;
         }
             .technologies .title {
-                margin: 1em 0    
+                margin: 1em 0
             }
             .technologies li {
                 margin: 1em 0;
@@ -297,14 +297,17 @@ footer {
     color: #fff;
     text-align: center;
 }
-    footer p {
+    footer .layer {
         background: rgba(0,255,255,.7);
         padding: 40px 0;
     }
     footer .me {
-        border-radius: 200px;
-        margin: 0 auto;
+        border-radius: 50px;
+        height: 50px;
+        margin: 0 auto 1em auto;
         overflow: hidden;
-        width: 200px;    
+        width: 50px;
     }
-
+    footer p {
+        margin-bottom: 0;
+    }
