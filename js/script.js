@@ -52,18 +52,25 @@
         });
 
         /**
-         * Change logo background color based on scroll location.
+         * Scroll events
          */
-        $(window).on('scroll', function () {
-            var current = $(document).scrollTop(),
-                offset = $('.work').offset().top,
-                logo = $('.logo');
+        var doc = $(document),
+            offset = $('.work').offset().top,
+            logo = $('.logo'),
+            info = $('.information');
 
+        $(window).on('scroll', function () {
+            var current = doc.offset().top;
+
+            // Change logo background color based on scroll location.
             if (current > offset - (logo.position().top + logo.height() / 2)) {
                 logo.addClass('dark');
             } else {
                 logo.removeClass('dark');
             }
+
+            // Scroll backround image
+            info.css('background-position', '0 ' + doc.offset().top / 10 + '%');
         });
 
         /**
@@ -82,15 +89,6 @@
             }).animate({
                 'width': level + '%'
             }, 'fast');
-        });
-
-        /**
-         *  Parallax scrolling effect
-         */
-        var info = $('.information'),
-            $doc = $(document);
-        $(window).on('scroll', function () {
-            info.css('background-position', '0 ' + $doc.scrollTop() / 10 + '%');
         });
 
     });
