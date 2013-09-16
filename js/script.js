@@ -86,10 +86,9 @@
             elem.append('<i>');
 
             elem.find('i').css({
-                'background': 'rgba(0,255,' + (level * 2) + ',.7)'
-            }).animate({
+                'background': 'rgba(0,255,' + (level * 2) + ',.7)',
                 'width': level + '%'
-            }, 'fast');
+            });
         });
 
     });
