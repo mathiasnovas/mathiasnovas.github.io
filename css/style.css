@@ -191,7 +191,7 @@ p {
         color: #000;
     }
     .work .item {
-        min-height: 300px;
+        min-height: 275px;
         transition: .3s;
     }
     .work .item:hover {
@@ -203,7 +203,7 @@ p {
             display: block;
         }
         .work .item .title {
-            font-size: 2em;
+            font-size: 1.5em;
             margin: 0 0 10px;
             text-align: left;
             word-wrap: break-word;
