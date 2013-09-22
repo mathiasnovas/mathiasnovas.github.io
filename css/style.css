@@ -48,6 +48,9 @@ p {
     }
     .page .logo:hover {
         -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
         .page .logo a {
             color: #000;
