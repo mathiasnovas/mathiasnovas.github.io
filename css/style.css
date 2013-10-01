@@ -208,8 +208,10 @@ p {
         .work .item .title {
             font-size: 1.5em;
             margin: 0 0 10px;
+            overflow: hidden;
             text-align: left;
-            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: no-wrap;
         }
         .work .item .date {
             color: #999;
