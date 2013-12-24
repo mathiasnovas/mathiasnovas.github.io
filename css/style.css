@@ -91,11 +91,10 @@ p {
     .information .boxes {
         height: 250px;
         left: 0;
-        margin-top: -125px;
         position: absolute;
         right: 0;
         text-align: center;
-        top: 50%;
+        top: 35%;
         width: 100%;
     }
         .information .boxes .title {
@@ -106,16 +105,11 @@ p {
             padding: 0 5px;
         }
         .information .boxes ul {
-            background: rgba(0,255,255,.7);
-            border-radius: 125px;
             display: inline-block;
             height: 250px;
             list-style: none;
             padding: 3.5em 0 0;
             width: 250px;
-            -webkit-animation: rainbow 3s;
-            -moz-animation: rainbow 3s;
-            animation: rainbow 3s;
         }
         .information .boxes li,
         .information .boxes li a {

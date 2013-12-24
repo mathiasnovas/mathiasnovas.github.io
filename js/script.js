@@ -60,6 +60,9 @@
             info = $('.information'),
             current = '';
 
+        var boxes = $('.boxes'),
+            more = $('.more');
+
         $(window).on('scroll', function () {
             current = doc.scrollTop();
 
@@ -70,8 +73,14 @@
                 logo.removeClass('dark');
             }
 
-            // Scroll backround image
-            info.css('background-position', '0 ' + doc.scrollTop() / 10 + '%');
+            boxes.css({
+                'margin-top': '-' + doc.scrollTop() / 2 + 'px',
+                'opacity': 1 -  doc.scrollTop() / 300
+            });
+
+            more.css({
+                'opacity': 1 - doc.scrollTop() / 500
+            });
         });
 
         /**
