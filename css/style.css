@@ -236,6 +236,9 @@ p {
 		.work .item .language.objective-c {
 			background: #FF009D;
 		}
+		.work .item .language.php {
+			background: #5873E8;
+		}
     /* Mobile & tablet view */
     @media only screen and (max-width: 940px) {
         .work .item {
