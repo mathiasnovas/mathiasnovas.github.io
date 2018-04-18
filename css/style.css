@@ -16,7 +16,7 @@ body {
  * Typography
  */
 a {
-    color: #fff;
+    color: blue;
 }
 h1, h2, h3 {
     font-family: inherit;
@@ -75,239 +75,35 @@ p {
  * Information
  */
 .information {
-    background: url('../img/bg.jpg') no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    background-color: #fafafa;
+    text-align: center;
+
 }
+    .information ul {
+        list-style: none;
+    }
     .information .title {
-        color: #fff;
         font-size: 3em;
         font-family: inherit;
         margin: 1em auto;
         text-align: center;
-    }
-    /* Boxes */
-    .information .boxes {
-        height: 250px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 35%;
-        width: 100%;
-    }
-        .information .boxes .title {
-            border-bottom: 1px dotted #fff;
-            display: inline-block;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            padding: 0 5px;
-        }
-        .information .boxes ul {
-            display: inline-block;
-            height: 250px;
-            list-style: none;
-            padding: 3.5em 0 0;
-            width: 250px;
-        }
-        .information .boxes li,
-        .information .boxes li a {
-            color: #fff;
-        }
-    /* More button */
-    .information .more {
-        bottom: 2em;
-        color: #fff;
-        left: 50%;
-        margin: 0 auto 0 -100px;
-        position: absolute;
-        text-align: center;
-        width: 200px;
-    }
-    /* Mobile view & tablet view */
-    @media only screen and (max-width: 900px) {
-        .information {}
-            .information .boxes {
-                width: 100%;
-            }
-    }
-    @media only screen and (max-width: 820px) {
-        .information .boxes ul {
-            font-size: .8em;
-            border-radius: 100px;
-            height: 200px;
-            width: 200px;
-        }
-    }
-    @media only screen and (max-width: 767px) {
-        .information {
-            height: auto;
-        }
-            .information .boxes {
-                background: rgba(0,255,255,.7);
-                height: auto;
-                margin-top: 0;
-                position: relative;
-                top: 0;
-                width: 100%;
-            }
-                .information .boxes .box {
-                    padding: 0;
-                }
-                .information .boxes .box ul {
-                    background: none;
-                    margin: 0;
-                    -webkit-animation: none;
-                    -moz-animation: none;
-                    animation: none;
-                }
-                .information .boxes .title {
-                    font-size: 3em;
-                    margin: 0 0 .5em;
-                }
-                .information .boxes ul {
-                    border-radius: 0;
-                    height: auto;
-                    padding: 0 0 3em;
-                    width: 100%;
-                }
-                .information .boxes .box:first-child ul {
-                    padding-top: 3em;
-                }
-    }
-
-/**
- * Work
- */
-.work {
-    background: #fafafa;
-    padding: 4em 0;
-}
-    .work a {
-        color: #000;
-    }
-    .work .item {
-        min-height: 275px;
-        transition: .3s;
-    }
-    .work .item:hover {
-    }
-    .work .item:last-child {
-        float: left;
-    }
-        .work .item a {
-            display: block;
-        }
-        .work .item .title {
-            font-size: 1.5em;
-            margin: 0 0 10px;
-            overflow: hidden;
-            text-align: left;
-            text-overflow: ellipsis;
-            white-space: no-wrap;
-        }
-        .work .item .date {
-            color: #999;
-        }
-        /* Languages */
-        .work .item .language {
-            background: #000;
-            border-radius: 5px;
-            color: #fff;
-            font-size: .8em;
-            opacity: .5;
-            padding: 2px 5px;
-        }
-        .work .item .language.javascript {
-            background: #e2662d;
-            color: #fff;
-        }
-        .work .item .language.viml {
-            background: #49944b;
-            color: #fff;
-        }
-        .work .item .language.shell {
-            background: #536ccb;
-        }
-        .work .item .language.css {
-            background: #1F085E;
-        }
-		.work .item .language.objective-c {
-			background: #FF009D;
-		}
-		.work .item .language.php {
-			background: #5873E8;
-		}
-    /* Mobile & tablet view */
-    @media only screen and (max-width: 940px) {
-        .work .item {
-            width: 33.33%;
-        }
-    }
-    @media only screen and (max-width: 767px) {
-        .work {
-            padding: 1em 0;
-        }
-        .work .item {
-            min-height: 0;
-            padding: 2.5em 1em;
-            width: 100%;
-        }
-    }
-
-/**
- * Technologies
- */
-.technologies {
-    background: #000;
-    color: #999;
-    padding: 4em 0;
-    text-align: center;
-}
-    .technologies .title {
-        margin: 0 0 1em;
-    }
-    .technologies ul {
-        list-style: none;
-        overflow: hidden;
-    }
-    .technologies .ometer {
-        background: #333;
-        border-right: 1px solid #fff;
-        display: block;
-    }
-    .technologies .ometer i {
-        display: block;
-        height: 10px;
-        transition: 10s;
-        width: 10px;
-    }
-    /* Mobile */
-    @media only screen and (max-width: 767px) {
-        .technologies {
-            padding: 1em 0;
-        }
-            .technologies .title {
-                margin: 1em 0
-            }
-            .technologies li {
-                margin: 1em 0;
-            }
     }
 
 /**
  * Footer
  */
 footer {
-    background: url('../img/bg.jpg') no-repeat;
     background-size: cover;
     color: #fff;
     text-align: center;
 }
-    footer .layer {
-        background: rgba(0,255,255,.7);
-        padding: 40px 0;
+footer .layer {
+    padding: 40px 0;
+    background-color: blue;
     }
     footer .me {
         border-radius: 75px;
