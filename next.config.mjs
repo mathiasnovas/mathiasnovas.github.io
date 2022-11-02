@@ -5,6 +5,8 @@
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env/server.mjs"));
 
+const isProd = process.env.NODE_ENV === 'production'
+
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
@@ -13,5 +15,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  assetPrefix: isProd ? '/mathiasnovas.github.io/' : '',
+  images: {
+    unoptimized: true,
+  }
 };
 export default config;
